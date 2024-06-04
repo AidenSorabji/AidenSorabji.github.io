@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="AidenSorabji.github.io">
+	<meta name="author" content="Aiden-Sorabji">
+
+	
+	<link rel="icon" type="image/png" href="src/media/favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="canonical" href="https://aidensorabji.github.io">
+
+	<script src="script.js" defer></script>
+
+	<link rel="preload" as="font" href="src/fonts/terminus-webfont.woff2" type="font/woff2" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="style.css">
+	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+	<video
+		preload="none"
+		onloadstart="this.playbackRate = 0.65;"
+		autoplay
+		muted
+		loop
+		id="noise_vid"
+		src="src/media/noise.mp4"
+		>
+	</video>
+
+	<video
+		preload="none"
+		onloadstart="this.playbackRate = 0.85;"
+		autoplay
+		muted
+		loop
+		id="rain_vid"
+		src="src/media/rain_bg.mp4"
+		>
+	</video>
+
+	<div class="vignette"></div>
+
+	<div id="videohue"></div>
+	<div id="canvas">
+		<header>
+			<pre id="title">
+ ░▒▓██████▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓████████▓▒░▒▓███████▓▒░        ░▒▓███████▓▒░        
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░               
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░               
+░▒▓████████▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░       ░▒▓██████▓▒░         
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░             ░▒▓█▓▒░        
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░             ░▒▓█▓▒░▒▓██▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓███████▓▒░░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓███████▓▒░░▒▓██▓▒░                                                                                                                                                        
+                                                                                                                                                       </pre>
+			<br>
+			<p>Welcome to my site!!</p>
+			<p>I hope you like the site so far, please take a look around!</p>
+			<br>
+			<p id="changeEffects">Want some fancy effects? Click <a onclick="changeEffects()">HERE</a> to turn them on.</p>
+		</header>
+		<p>Some things you might be interested in:</p>
+		<nav id="nav_tabs">
+			<ul>
+				<li><a href="#home" class="tab_switcher" id="home_tab">Home</a></li>
+				<li><a href="#about" class="tab_switcher" id="about_tab">About</a></li>
+			</ul>
+		</nav>
+		<div id="home" class="tabs">
+			<div class="grid">
+				<div class="grid_row">
+					<div class="grid_row_box">
+						<h2>Credits</h2>
+						<p><em>RichardApps:</em> Thanks so much for making this website!!!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div id="about" class="tabs">
+			<div class="grid">
+				<div class="grid_row">
+					<div class="grid_row_box">
+						<h2>About me</h2>
+						<p>I am a 17-year-old who is experienced in <em>Python</em>,</p>
+						<p><em>HTML</em>, and <em>Java</em>. I am based in Calgary, and I am</p>
+						<p>in Grade 11.</p>
+					</div>
+					<div class="grid_row_box">
+						<h2>Skills</h2>
+						<p>-> Python <em>5+ Years Experience</em></p>
+						<p>-> HTML <em>2+ Years Experience</em></p>
+						<p>-> Java <em>6+ Months Experience</em></p>
+					</div>
+				</div>
+				<div class="grid_row">
+					<div class="grid_row_box">
+						<h2>Universities</h2>
+						<p>I hope to get into many different universities, the universities I want to get into are:</p>
+						<p>-> <em>University of Calgary</em></p>
+						<p>-> <em>Mount Royal University</em></p>
+						<p>-> <em>Saint Mary's University</em></p>
+						<p>-> <em>University of Alberta</em></p>
+					</div>
+					<div class="grid_row_box">
+						<h2>Degrees</h2>
+						<p>The degrees I want to pursue would be:</p>
+						<p>-> <em>(BSc) Computer Science</em></p>
+						<p>-> <em>(BSc) Software Engineering</em></p>
+						<p>-> <em>(BSc) Data Science</em></p>
+						<p>-> <em>(B.Comm) Business Analytics</em></p>
+					</div>
+					<div class="grid_row_box">
+						<h2>Social Media</h2>
+						<p class="contact_link"><i class="fa-brands fa-github fa-fw"></i><a href="https://github.com/aidensorabji" target="_blank">GitHub</a></p>
+					</div>
+					<div class="grid_row_box">
+						<h2>Contact</h2>
+						<p>I mostly prefer people to reach out through my email.</p>
+						<br>
+						<p>My email is:</p>
+						<p><a href="mailto:sorabjiaiden@gmail.com" target="_blank">sorabjiaiden@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="grid_row">
+					<div class="grid_row_box">
+						<h2>Resources</h2>
+						<p>Here are some useful resources I use regularly:</p>
+						<br>
+						<p>- development -</p>
+						<p>-> VS Code [<a href="https://code.visualstudio.com" target="_blank">link</a>] <em>Really good IDE.</em></p>
+						<p>-> Macbook Pro [<a href="https://support.apple.com/en-ca/111340" target="_blank">link</a>] <em>Really good computer, long battery life, and lots of power.</em></p>
+						<p>-> Python [<a href="https://www.python.org" target="_blank">link</a>] <em>These days i mostly code in python to develop many of my applications and stuff.</em></p>
+						<br>
+						<p>- graphics -</p>
+						<p>-> customtkinter [<a href="https://github.com/TomSchimansky/CustomTkinter" target="_blank">link</a>] <em>Graphic GUI Library.</em></p>
+						<p>-> pygame [<a href="https://www.pygame.org/news" target="_blank">link</a>] <em>Great game GUI and game maker.</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

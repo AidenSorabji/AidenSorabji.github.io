@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RichardApps">
+    <title>404 - PAGE NOT FOUND</title>
+
+    <link rel="icon" type="image/png" href="src/media/favicon.png">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="effects.css">
+</head>
+<body>
+    <video
+		onloadstart="this.playbackRate = 0.65;"
+		autoplay
+		muted
+		loop
+		id="noise_vid"
+		src="src/media/noise.mp4">
+	</video>
+	<div class="vignette"></div>
+	
+	<div id="videohue"></div>
+    <pre>
+██╗    ██╗██╗  ██╗███████╗██████╗ ███████╗     █████╗ ██████╗ ███████╗    ██╗    ██╗███████╗██████╗ 
+██║    ██║██║  ██║██╔════╝██╔══██╗██╔════╝    ██╔══██╗██╔══██╗██╔════╝    ██║    ██║██╔════╝╚════██╗
+██║ █╗ ██║███████║█████╗  ██████╔╝█████╗      ███████║██████╔╝█████╗      ██║ █╗ ██║█████╗    ▄███╔╝
+██║███╗██║██╔══██║██╔══╝  ██╔══██╗██╔══╝      ██╔══██║██╔══██╗██╔══╝      ██║███╗██║██╔══╝    ▀▀══╝ 
+╚███╔███╔╝██║  ██║███████╗██║  ██║███████╗    ██║  ██║██║  ██║███████╗    ╚███╔███╔╝███████╗  ██╗   
+ ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝    ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝     ╚══╝╚══╝ ╚══════╝  ╚═╝
+</pre>
+    <br>&nbsp
+    <p>You stumble forward, eyes adjusting to the harsh light.</p>
+    <p>The landscape stretches out before you, an endless expanse of sand.</p>
+    <br>&nbsp;
+    <p>How did we end up here?</p>
+    <br>&nbsp;
+    <p>A figure emerges from the haze, their features indistinct.</p>
+    <br>&nbsp;
+    <p><em>"Lost you way, have you?" </em>they say, their voice low and detached. <em>"This region isn't mapped out, it's not safe out here."</em></p>
+    <br>&nbsp;
+    <p><em>"Anyways.. just go south and you'll be back on the right track in no time.":</em></p>
+    <br>&nbsp;
+    <a href="index.html">HOMEPAGE</a>
+    <footer>
+        <p><em>ERROR 404 - PAGE NOT FOUND</em></p>
+    </footer>
+</body>
+<style>
+    :root {
+        --main-color: #f32121;
+        --bg-color: rgb(224, 20, 20); /* Change, and paste inner values below */
+        --bg-color: 224, 20, 20; /* Needs to be in this format, so opacity can be controlled individually */
+        --bg-color-2: #f50c0c77;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+    }
+
+    pre, p, em, br, a {
+        z-index: 5;
+
+        opacity: 0.9;
+        white-space: unset;
+    }
+
+    pre {
+        user-select: none;
+    }
+
+    p, em, a {
+        font-size: 1.75rem;
+    }
+
+    a {
+        border: 1px solid red;
+        padding: 0.25em 1em 0.25em 1em;
+        text-decoration: none;
+
+        background: linear-gradient(45deg, rgba(255, 0, 0, 0.09) 20%, rgba(255, 3, 3, 0.329) 100%);
+    }
+
+    a:hover {
+        background-color: red;
+        color: white;
+        box-shadow: none;
+    }
+
+    #noise_vid {
+        opacity: 0.4;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0.5em;
+        text-align: center;
+        font-weight: 100;
+    }
+</style>
+</html>
