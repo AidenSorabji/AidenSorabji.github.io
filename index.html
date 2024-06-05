@@ -6,8 +6,9 @@
 	<meta name="description" content="AidenSorabji.github.io">
 	<meta name="author" content="Aiden-Sorabji">
 
+	<title>Aiden's Website</title>
 	
-	<link rel="icon" type="image/png" href="src/media/favicon.png">
+	<link rel="icon" type="image/png" href="src/media/disk_icon.png">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link rel="canonical" href="https://aidensorabji.github.io">
 
@@ -16,8 +17,6 @@
 	<link rel="preload" as="font" href="src/fonts/terminus-webfont.woff2" type="font/woff2" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="style.css">
-	
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
@@ -44,7 +43,6 @@
 		src="src/media/rain_bg.mp4"
 		>
 	</video>
-
 	<div class="vignette"></div>
 
 	<div id="videohue"></div>
@@ -69,7 +67,9 @@
 		<nav id="nav_tabs">
 			<ul>
 				<li><a href="#home" class="tab_switcher" id="home_tab">Home</a></li>
+				<li><a href="#projects" class="tab_switcher" id="projects_tab">Projects</a></li>
 				<li><a href="#about" class="tab_switcher" id="about_tab">About</a></li>
+				<!-- Put in tab about projects -->
 			</ul>
 		</nav>
 		<div id="home" class="tabs">
@@ -88,7 +88,52 @@
 				</div>
 			</div>
 		</div>
-
+		<div id="projects" class="tabs">
+			<div class="grid">
+				<div class="grid_row">
+					<div class="grid_row_box">
+						<h2>Minecraft Cookie Clicker</h2>
+						<p><em>Info: </em>I created a version of cookie clicker in the style of Minecraft using python and customtkinter. The reason why I chose to use customtkinter and not pygame is to give myself a challenge, after all customtkinter is an application GUI creater and not a video game development library.</p>
+						<br>
+						<p>-> <em>[<a href="https://github.com/AidenSorabji/Minecraft-Cookie-Clicker" target="_blank">link</a>]</em></p>
+					</div>
+					<div class="grid_row_box">
+						<h2>Word In Python</h2>
+						<p><em>Info: </em>I made using customtkinter a fully working simplified version of Word in python. It features a saving and loading file system using pickle; cut, copy, and paste function; shortcuts to remove text quickly (CMD+Delete = Delete full line); word counter; font changer; and more.</p>
+						<br>
+						<p>-> <em>[<a href="https://github.com/AidenSorabji/Word-in-Python" target="_blank">link</a>]</em></p>
+					</div>
+				</div>
+				<div class="grid_row">
+					<div class="grid_row_box">
+						<h2>customtkinter Calculator</h2>
+						<p><em>Info: </em>Using customtkinter and python, I created a calculator that matches the style of the original macOS 11+ calculator. It features a fully working UI, fully working functionality with integers and numbers with decimal places, and a fully working settings menu for customizing your experience.</p>
+						<br>
+						<p>-> <em>[<a href="https://github.com/AidenSorabji/Mac-Tkinter-Calculator" target="_blank">link</a>]</em></p>
+					</div>
+					<div class="grid_row_box">
+						<h2>customtkinter Calculator</h2>
+						<p><em>Info: </em>Using customtkinter and python, I created a calculator that matches the style of the original macOS 11+ calculator. It features a fully working UI, fully working functionality with integers and numbers with decimal places, and a fully working settings menu for customizing your experience.</p>
+						<br>
+						<p>-> <em>[<a href="https://github.com/AidenSorabji/Mac-Tkinter-Calculator" target="_blank">link</a>]</em></p>
+					</div>
+				</div>
+				<div class="grid_row">
+					<div class="grid_row_box">
+						<h2>Structured Programming Modules</h2>
+						<p><em>Info: </em>The full list of structured programming modules used for different coding challenges. Each of them have all extra components added, each of them work, they all are efficient, and they all go above and beyond what was asked.</p>
+						<br>
+						<p>-> <em>[<a href="https://github.com/AidenSorabji/Structured-Programming-Modules" target="_blank">link</a>]</em></p>
+					</div>
+					<div class="grid_row_box">
+						<h2>My Website</h2>
+						<p><em>Info: </em>This website using the code from RichardApps uses HTML, CSS, and JS to create everything. HTML is used for the pages, CSS is used for the styles and effects, and JS is used for the different scripts used.</p>
+						<br>
+						<p>-> <em>[<a href="https://github.com/AidenSorabji/AidenSorabji.github.io" target="_blank">link</a>]</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 		<div id="about" class="tabs">
 			<div class="grid">
@@ -104,6 +149,7 @@
 						<p>-> Python <em>5+ Years Experience</em></p>
 						<p>-> HTML <em>2+ Years Experience</em></p>
 						<p>-> Java <em>6+ Months Experience</em></p>
+						<p>-> C++ <em>3+ Months Experience</em></p>
 					</div>
 				</div>
 				<div class="grid_row">
@@ -118,14 +164,15 @@
 					<div class="grid_row_box">
 						<h2>Degrees</h2>
 						<p>The degrees I want to pursue would be:</p>
-						<p>-> <em>(BSc) Computer Science</em></p>
-						<p>-> <em>(BSc) Software Engineering</em></p>
-						<p>-> <em>(BSc) Data Science</em></p>
-						<p>-> <em>(B.Comm) Business Analytics</em></p>
+						<p>-> (BSc) <em> Computer Science</em></p>
+						<p>-> (BSc) <em> Software Engineering</em></p>
+						<p>-> (BSc) <em> Data Science</em></p>
+						<p>-> (Bcomm) <em> Business Analytics</em></p>
 					</div>
 					<div class="grid_row_box">
 						<h2>Social Media</h2>
 						<p class="contact_link"><i class="fa-brands fa-github fa-fw"></i><a href="https://github.com/aidensorabji" target="_blank">GitHub</a></p>
+						<p class="contact_link"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:sorabjiaiden@gmail.com" target="_blank">sorabjiaiden@gmail.com</a></p>
 					</div>
 					<div class="grid_row_box">
 						<h2>Contact</h2>
