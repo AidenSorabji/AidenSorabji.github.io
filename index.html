@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="AidenSorabji.github.io">
-	<meta name="author" content="Aiden-Sorabji">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AidenSorabji.github.io" />
+    <meta name="author" content="Aiden-Sorabji" />
 
-	<title>Aiden's Website</title>
-	
-	<link rel="icon" type="image/png" href="src/media/disk_icon.png">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="canonical" href="https://aidensorabji.github.io">
+    <title>Aiden's Website</title>
 
-	<script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="src/media/disk_icon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="canonical" href="https://aidensorabji.github.io" />
 
-	<link rel="preload" as="font" href="src/fonts/terminus-webfont.woff2" type="font/woff2" crossorigin="anonymous">
+    <script src="script.js" defer></script>
 
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="preload"
+      as="font"
+      href="src/fonts/terminus-webfont.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
-	<video
-		preload="none"
-		onloadstart="this.playbackRate = 0.65;"
-		autoplay
-		muted
-		loop
-		id="noise_vid"
-		src="src/media/noise.mp4"
-		>
-	</video>
+  <body>
+    <video
+      preload="none"
+      onloadstart="this.playbackRate = 0.65;"
+      autoplay
+      muted
+      loop
+      id="noise_vid"
+      src="src/media/noise.mp4"
+    ></video>
 
-	<video
-		preload="none"
-		onloadstart="this.playbackRate = 0.85;"
-		autoplay
-		muted
-		loop
-		id="rain_vid"
-		src="src/media/rain_bg.mp4"
-		>
-	</video>
-	<div class="vignette"></div>
+    <video
+      preload="none"
+      onloadstart="this.playbackRate = 0.85;"
+      autoplay
+      muted
+      loop
+      id="rain_vid"
+      src="src/media/rain_bg.mp4"
+    ></video>
+    <div class="vignette"></div>
 
-	<div id="videohue"></div>
-	<div id="canvas">
-		<header>
-			<pre id="title">
+    <div id="videohue"></div>
+    <div id="canvas">
+      <header>
+        <pre id="title">
  ░▒▓██████▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓████████▓▒░▒▓███████▓▒░  
 ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
 ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
@@ -56,153 +65,329 @@
 ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
 ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
 ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓███████▓▒░░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░                                                                                                                                                                                                              
-</pre>
-			<br>
-			<p>Welcome to my site!!</p>
-			<p>I hope you like the site so far, please take a look around!</p>
-			<br>
-			<p id="changeEffects">Want some fancy effects? Click <a onclick="changeEffects()">HERE</a> to turn them on.</p>
-		</header>
-		<p>Some things you might be interested in:</p>
-		<nav id="nav_tabs">
-			<ul>
-				<li><a href="#home" class="tab_switcher" id="home_tab">Home</a></li>
-				<li><a href="#projects" class="tab_switcher" id="projects_tab">Projects</a></li>
-				<li><a href="#about" class="tab_switcher" id="about_tab">About</a></li>
-				<!-- Put in tab about projects -->
-			</ul>
-		</nav>
-		<div id="home" class="tabs">
-			<div class="grid">
-				<div class="grid_row">
-					<div class="grid_row_box">
-						<h2>Contacts</h2>
-						<p>-> <em><a href="https://github.com/aidensorabji" target="_blank">GitHub</a></em> Follow me for updates on my repositories or to hire me.</p>
-					</div>
-					<div class="grid_row_box">
-						<h2>Credits</h2>
-						<p>-> <em><a href="https://www.richardapps.net" target="_blank">RichardApps</a></em> Thanks so much for making this website!!!</p>
-						<p>-> <em><a href="https://aidensorabji.github.io" target="_blank">Aiden Sorabji</a></em> Thanks to me for configuring the website!!!</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="projects" class="tabs">
-			<div class="grid"> 
-				<div class="grid_row">
-					<div class="grid_row_box">
-						<h2>Minecraft Cookie Clicker</h2>
-						<p><em>Info: </em>I created a version of cookie clicker in the style of Minecraft using python and customtkinter. The reason why I chose to use customtkinter and not pygame is to give myself a challenge, after all customtkinter is an application GUI creater and not a video game development library.</p>
-						<br>
-						<p>-> <em>[<a href="https://github.com/AidenSorabji/Minecraft-Cookie-Clicker" target="_blank">link</a>]</em></p>
-					</div>
-					<div class="grid_row_box">
-						<h2>Word In Python</h2>
-						<p><em>Info: </em>I made using customtkinter a fully working simplified version of Word in python. It features a saving and loading file system using pickle; cut, copy, and paste function; shortcuts to remove text quickly (CMD+Delete = Delete full line); word counter; font changer; and more.</p>
-						<br>
-						<p>-> <em>[<a href="https://github.com/AidenSorabji/Word-in-Python" target="_blank">link</a>]</em></p>
-					</div>
-				</div>
-				<div class="grid_row">
-					<div class="grid_row_box">
-						<h2>customtkinter Calculator</h2>
-						<p><em>Info: </em>Using customtkinter and python, I created a calculator that matches the style of the original macOS 11+ calculator. It features a fully working UI, fully working functionality with integers and numbers with decimal places, and a fully working settings menu for customizing your experience.</p>
-						<br>
-						<p>-> <em>[<a href="https://github.com/AidenSorabji/Mac-Tkinter-Calculator" target="_blank">link</a>]</em></p>
-					</div>
-					<div class="grid_row_box">
-						<h2>customtkinter Calculator</h2>
-						<p><em>Info: </em>Using customtkinter and python, I created a calculator that matches the style of the original macOS 11+ calculator. It features a fully working UI, fully working functionality with integers and numbers with decimal places, and a fully working settings menu for customizing your experience.</p>
-						<br>
-						<p>-> <em>[<a href="https://github.com/AidenSorabji/Mac-Tkinter-Calculator" target="_blank">link</a>]</em></p>
-					</div>
-				</div>
-				<div class="grid_row">
-					<div class="grid_row_box">
-						<h2>Structured Programming Modules</h2>
-						<p><em>Info: </em>The full list of structured programming modules used for different coding challenges. Each of them have all extra components added, each of them work, they all are efficient, and they all go above and beyond what was asked.</p>
-						<br>
-						<p>-> <em>[<a href="https://github.com/AidenSorabji/Structured-Programming-Modules" target="_blank">link</a>]</em></p>
-					</div>
-					<div class="grid_row_box">
-						<h2>My Website</h2>
-						<p><em>Info: </em>This website using the code from RichardApps uses HTML, CSS, and JS to create everything. HTML is used for the pages, CSS is used for the styles and effects, and JS is used for the different scripts used.</p>
-						<br>
-						<p>-> <em>[<a href="https://github.com/AidenSorabji/AidenSorabji.github.io" target="_blank">link</a>]</em></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div id="about" class="tabs">
-			<div class="grid">
-				<div class="grid_row">
-					<div class="grid_row_box">
-						<h2>About me</h2>
-						<p>I am a 17-year-old who is experienced in <em>Python</em>,</p>
-						<p><em>HTML</em>, <em>Java</em>, and <em>C++</em>. I am based in Canada.</p>
-					</div>
-					<div class="grid_row_box">
-						<h2>Skills</h2>
-						<p>-> Python <em>5+ Years Experience</em></p>
-						<p>-> HTML <em>2+ Years Experience</em></p>
-						<p>-> Java <em>6+ Months Experience</em></p>
-						<p>-> C++ <em>3+ Months Experience</em></p>
-					</div>
-				</div>
-				<div class="grid_row">
-					<div class="grid_row_box">
-						<h2>Universities</h2>
-						<p>I hope to get into many different universities, the universities I want to get into are:</p>
-						<p>-> <em>University of Calgary</em></p>
-						<p>-> <em>Mount Royal University</em></p>
-						<p>-> <em>Saint Mary's University</em></p>
-						<p>-> <em>University of Alberta</em></p>
-					</div>
-					<div class="grid_row_box">
-						<h2>Degrees</h2>
-						<p>The degrees I want to pursue would be:</p>
-						<p>-> (BSc) <em> Computer Science</em></p>
-						<p>-> (BSc) <em> Software Engineering</em></p>
-						<p>-> (BSc) <em> Data Science</em></p>
-						<p>-> (Bcomm) <em> Business Analytics</em></p>
-					</div>
-					<div class="grid_row_box">
-						<h2>Social Media</h2>
-						<p class="contact_link"><i class="fa-brands fa-github fa-fw"></i><a href="https://github.com/aidensorabji" target="_blank">GitHub</a></p>
-						<p class="contact_link"><i class="fa fa-terminal" aria-hidden="true"></i><a href="https://aidensorabji.github.io" target="_blank">Website</a></p>
-						<br>
-						<br>
-						<p>Reach out to me through Github!</p>
-					</div>
-					<div class="grid_row_box">
-						<h2>Computer Specs</h2>
-						<p>-> CPU <em>M2 Pro (10 Core CPU)</em></p>
-						<p>-> GPU <em>M2 Pro (16 Core GPU)</em></p>
-						<p>-> RAM <em>16 GB LPDDR5</em></p>
-						<p>-> Storage <em>1 TB SSD</em></p>
-						<p>-> Display <em>Liquid Retina XDR Display</em></p>
-						<p>-> Refresh Rate <em>120Hz</em></p>
-						<p>-> OS <em>macOS Sonoma 14.4.1 (23E224)</em></p>
-					</div>
-				</div>
-				<div class="grid_row">
-					<div class="grid_row_box">
-						<h2>Resources</h2>
-						<p>Here are some useful resources I use regularly:</p>
-						<br>
-						<p>- development -</p>
-						<p>-> VS Code [<a href="https://code.visualstudio.com" target="_blank">link</a>] <em>Really good IDE.</em></p>
-						<p>-> Macbook Pro [<a href="https://support.apple.com/en-ca/111340" target="_blank">link</a>] <em>Trustful computer that has long battery life, lots of power, and great reliability.</em></p>
-						<p>-> Python [<a href="https://www.python.org" target="_blank">link</a>] <em>These days I mostly code in python to develop many of my applications and games.</em></p>
-						<br>
-						<p>- graphics -</p>
-						<p>-> customtkinter [<a href="https://github.com/TomSchimansky/CustomTkinter" target="_blank">link</a>] <em>Great graphic GUI library that replaces the outdated tkinter.</em></p>
-						<p>-> pygame [<a href="https://www.pygame.org/news" target="_blank">link</a>] <em>Great game development library.</em></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
+</pre
+        >
+        <br />
+        <p>Welcome to my site!!</p>
+        <p>I hope you like the site so far, please take a look around!</p>
+        <br />
+        <p id="changeEffects">
+          Want some fancy effects? Click
+          <a onclick="changeEffects()">HERE</a> to turn them on.
+        </p>
+      </header>
+      <p>Some things you might be interested in:</p>
+      <nav id="nav_tabs">
+        <ul>
+          <li><a href="#home" class="tab_switcher" id="home_tab">Home</a></li>
+          <li>
+            <a href="#projects" class="tab_switcher" id="projects_tab"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="tab_switcher" id="about_tab">About</a>
+          </li>
+          <!-- Put in tab about projects -->
+        </ul>
+      </nav>
+      <div id="home" class="tabs">
+        <div class="grid">
+          <div class="grid_row">
+            <div class="grid_row_box">
+              <h2>Contacts</h2>
+              <p>
+                ->
+                <em
+                  ><a href="https://github.com/aidensorabji" target="_blank"
+                    >GitHub</a
+                  ></em
+                >
+                Follow me for updates on my repositories or to hire me.
+              </p>
+            </div>
+            <div class="grid_row_box">
+              <h2>Credits</h2>
+              <p>
+                ->
+                <em
+                  ><a href="https://www.richardapps.net" target="_blank"
+                    >RichardApps</a
+                  ></em
+                >
+                Thanks so much for making this website!!!
+              </p>
+              <p>
+                ->
+                <em
+                  ><a href="https://aidensorabji.github.io" target="_blank"
+                    >Aiden Sorabji</a
+                  ></em
+                >
+                Thanks to me for configuring the website!!!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="projects" class="tabs">
+        <div class="grid">
+          <div class="grid_row">
+            <div class="grid_row_box">
+              <h2>Minecraft Cookie Clicker</h2>
+              <p>
+                <em>Info: </em>I created a version of cookie clicker in the
+                style of Minecraft using python and customtkinter. The reason
+                why I chose to use customtkinter and not pygame is to give
+                myself a challenge, after all customtkinter is an application
+                GUI creater and not a video game development library.
+              </p>
+              <br />
+              <p>
+                ->
+                <em
+                  >[<a
+                    href="https://github.com/AidenSorabji/Minecraft-Cookie-Clicker"
+                    target="_blank"
+                    >link</a
+                  >]</em
+                >
+              </p>
+            </div>
+            <div class="grid_row_box">
+              <h2>Word In Python</h2>
+              <p>
+                <em>Info: </em>I made using customtkinter a fully working
+                simplified version of Word in python. It features a saving and
+                loading file system using pickle; cut, copy, and paste function;
+                shortcuts to remove text quickly (CMD+Delete = Delete full
+                line); word counter; font changer; and more.
+              </p>
+              <br />
+              <p>
+                ->
+                <em
+                  >[<a
+                    href="https://github.com/AidenSorabji/Word-in-Python"
+                    target="_blank"
+                    >link</a
+                  >]</em
+                >
+              </p>
+            </div>
+          </div>
+          <div class="grid_row">
+            <div class="grid_row_box">
+              <h2>customtkinter Calculator</h2>
+              <p>
+                <em>Info: </em>Using customtkinter and python, I created a
+                calculator that matches the style of the original macOS 11+
+                calculator. It features a fully working UI, fully working
+                functionality with integers and numbers with decimal places, and
+                a fully working settings menu for customizing your experience.
+              </p>
+              <br />
+              <p>
+                ->
+                <em
+                  >[<a
+                    href="https://github.com/AidenSorabji/Mac-Tkinter-Calculator"
+                    target="_blank"
+                    >link</a
+                  >]</em
+                >
+              </p>
+            </div>
+            <div class="grid_row_box">
+              <h2>Platform Frenzy</h2>
+              <p>
+                <em>Info: </em>Using pygame and customtkinter, I made a platform
+                game that infinitely generates platforms and levels, in which
+                you have to cross to get points. The game features full
+                PlayStation © 5 controller support with haptic rumble supported,
+                as well as a fully working save system to save your high scores.
+              </p>
+              <br />
+              <p>
+                ->
+                <em
+                  >[<a
+                    href="https://github.com/AidenSorabji/Platform-Frenzy"
+                    target="_blank"
+                    >link</a
+                  >]</em
+                >
+              </p>
+            </div>
+          </div>
+          <div class="grid_row">
+            <div class="grid_row_box">
+              <h2>Structured Programming Modules</h2>
+              <p>
+                <em>Info: </em>The full list of structured programming modules
+                used for different coding challenges. Each of them have all
+                extra components added, each of them work, they all are
+                efficient, and they all go above and beyond what was asked.
+              </p>
+              <br />
+              <p>
+                ->
+                <em
+                  >[<a
+                    href="https://github.com/AidenSorabji/Structured-Programming-Modules"
+                    target="_blank"
+                    >link</a
+                  >]</em
+                >
+              </p>
+            </div>
+            <div class="grid_row_box">
+              <h2>My Website</h2>
+              <p>
+                <em>Info: </em>This website using the code from RichardApps uses
+                HTML, CSS, and JS to create everything. HTML is used for the
+                pages, CSS is used for the styles and effects, and JS is used
+                for the different scripts used.
+              </p>
+              <br />
+              <p>
+                ->
+                <em
+                  >[<a
+                    href="https://github.com/AidenSorabji/AidenSorabji.github.io"
+                    target="_blank"
+                    >link</a
+                  >]</em
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="about" class="tabs">
+        <div class="grid">
+          <div class="grid_row">
+            <div class="grid_row_box">
+              <h2>About me</h2>
+              <p>I am a 17-year-old who is experienced in <em>Python</em>,</p>
+              <p>
+                <em>HTML</em>, <em>Java</em>, and <em>C++</em>. I am based in
+                Canada.
+              </p>
+            </div>
+            <div class="grid_row_box">
+              <h2>Skills</h2>
+              <p>-> Python <em>5+ Years Experience</em></p>
+              <p>-> HTML <em>2+ Years Experience</em></p>
+              <p>-> Java <em>6+ Months Experience</em></p>
+              <p>-> C++ <em>3+ Months Experience</em></p>
+            </div>
+          </div>
+          <div class="grid_row">
+            <div class="grid_row_box">
+              <h2>Universities</h2>
+              <p>
+                I hope to get into many different universities, the universities
+                I want to get into are:
+              </p>
+              <p>-> <em>University of Calgary</em></p>
+              <p>-> <em>Mount Royal University</em></p>
+              <p>-> <em>Saint Mary's University</em></p>
+              <p>-> <em>University of Alberta</em></p>
+            </div>
+            <div class="grid_row_box">
+              <h2>Degrees</h2>
+              <p>The degrees I want to pursue would be:</p>
+              <p>-> (BSc) <em> Computer Science</em></p>
+              <p>-> (BSc) <em> Software Engineering</em></p>
+              <p>-> (BSc) <em> Data Science</em></p>
+              <p>-> (Bcomm) <em> Business Analytics</em></p>
+            </div>
+            <div class="grid_row_box">
+              <h2>Social Media</h2>
+              <p class="contact_link">
+                <i class="fa-brands fa-github fa-fw"></i
+                ><a href="https://github.com/aidensorabji" target="_blank"
+                  >GitHub</a
+                >
+              </p>
+              <p class="contact_link">
+                <i class="fa fa-terminal" aria-hidden="true"></i
+                ><a href="https://aidensorabji.github.io" target="_blank"
+                  >Website</a
+                >
+              </p>
+              <br />
+              <br />
+              <p>Reach out to me through Github!</p>
+            </div>
+            <div class="grid_row_box">
+              <h2>Computer Specs</h2>
+              <p>-> CPU <em>M2 Pro (10 Core CPU)</em></p>
+              <p>-> GPU <em>M2 Pro (16 Core GPU)</em></p>
+              <p>-> RAM <em>16 GB LPDDR5</em></p>
+              <p>-> Storage <em>1 TB SSD</em></p>
+              <p>-> Display <em>Liquid Retina XDR Display</em></p>
+              <p>-> Refresh Rate <em>120Hz</em></p>
+              <p>-> OS <em>macOS Sonoma 14.4.1 (23E224)</em></p>
+            </div>
+          </div>
+          <div class="grid_row">
+            <div class="grid_row_box">
+              <h2>Resources</h2>
+              <p>Here are some useful resources I use regularly:</p>
+              <br />
+              <p>- development -</p>
+              <p>
+                -> VS Code [<a
+                  href="https://code.visualstudio.com"
+                  target="_blank"
+                  >link</a
+                >] <em>Really good IDE.</em>
+              </p>
+              <p>
+                -> Macbook Pro [<a
+                  href="https://support.apple.com/en-ca/111340"
+                  target="_blank"
+                  >link</a
+                >]
+                <em
+                  >Trustful computer that has long battery life, lots of power,
+                  and great reliability.</em
+                >
+              </p>
+              <p>
+                -> Python [<a href="https://www.python.org" target="_blank"
+                  >link</a
+                >]
+                <em
+                  >These days I mostly code in python to develop many of my
+                  applications and games.</em
+                >
+              </p>
+              <br />
+              <p>- graphics -</p>
+              <p>
+                -> customtkinter [<a
+                  href="https://github.com/TomSchimansky/CustomTkinter"
+                  target="_blank"
+                  >link</a
+                >]
+                <em
+                  >Great graphic GUI library that replaces the outdated
+                  tkinter.</em
+                >
+              </p>
+              <p>
+                -> pygame [<a href="https://www.pygame.org/news" target="_blank"
+                  >link</a
+                >] <em>Great game development library.</em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
