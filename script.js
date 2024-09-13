@@ -53,7 +53,7 @@ let nfbText = document.getElementById('changeEffects');
 
 // Turn off major effects on default for mobile devices
 if (window.matchMedia("(max-width: 767px)").matches && !('effectsDisabled' in localStorage)) { effectsDisabled = true;}
-if (!effectsDisabled) { document.head.appendChild(link); nfbText.innerHTML = 'Don\'t like the effects? Click <a onclick="changeEffects()">HERE</a> to turn them off.';}
+if (!effectsDisabled) { document.head.appendChild(link); nfbText.innerHTML = 'Click <a onclick="changeEffects()">HERE</a> to turn effects off.';}
 
 function changeEffects() {
     localStorage.setItem('effectsDisabled', !effectsDisabled);
