@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Solid white background */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.emoji {
+    font-size: 100px; /* Adjust the size of the emoji */
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2)); /* Drop shadow effect */
+    position: relative; /* Ensure the emoji is positioned relative */
+    margin-right: 40px; /* Space between emoji and text */
+    margin-bottom: 20px; /* Space between emoji and content */
+}
+
+@keyframes fadeInEmoji {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #000; /* Solid black title text */
+    font-weight: bold; /* Make title bold */
+    opacity: 0;
+    animation: fadeInText 1.5s forwards;
+}
+
+.paragraph {
+    font-size: 1.2rem;
+    color: #222; /* Darker color for the paragraph heading */
+    font-weight: bold; /* Make paragraph text bold */
+    margin-top: 10px;
+    max-width: 400px; /* Set max-width to allow text wrapping */
+    line-height: 1.5; /* Adjust line-height for readability */
+    opacity: 0;
+    animation: fadeInText 1.5s forwards 0.5s;
+}
+
+.italic {
+    font-style: italic; /* Italicize the text */
+    font-weight: normal; /* Less bold */
+}
+
+.buttons {
+    display: flex;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInText 1.5s forwards 1s; /* Buttons fade in slightly later */
+}
+
+.button {
+    padding: 7px 50px; /* Increased padding for a wider button */
+    margin: 0 10px;
+    font-size: 1rem;
+    color: #000; /* Text color for the button */
+    background-color: #f9f9f9; /* Lighter button background color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow effect */
+}
+
+.button:hover {
+    background-color: #e0e0e0; /* Darker shade on hover */
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

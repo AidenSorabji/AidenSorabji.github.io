@@ -1,61 +1,33 @@
-const default_hash = '#home';
-let effectsDisabled = localStorage.getItem('effectsDisabled') === 'true';
+window.addEventListener('load', () => {
+    const container = document.querySelector('.container');
+    const emoji = document.getElementById('emoji');
+    const title = document.getElementById('title');
+    const paragraph = document.getElementById('paragraph');
+    const button1 = document.getElementById('button1');
+    const button2 = document.getElementById('button2');
 
-location = location.hash||default_hash
-changeTab(location.hash.slice(1));
+    // Fade in container with a slight delay
+    setTimeout(() => {
+        container.style.transition = "opacity 1.5s ease, transform 1.5s ease";
+        container.style.opacity = "1";
+        container.style.transform = "translateY(0)";
+    }, 1000);
 
-window.addEventListener('hashchange', function() {
-    changeTab(location.hash.slice(1));
-})
+    // Fade in title, paragraph, and buttons sequentially
+    setTimeout(() => {
+        title.style.transition = "opacity 1.5s ease";
+        title.style.opacity = "1";
+    }, 1500);
 
-function changeTab(tab) {
-    try {
-        document.querySelectorAll('.fade-in.visible').forEach(element => {
-                element.classList.remove('visible');
-                element.classList.remove('fade-in-anim');
-        });
+    setTimeout(() => {
+        paragraph.style.transition = "opacity 1.5s ease";
+        paragraph.style.opacity = "1";
+    }, 2000);
 
-        document.querySelectorAll('.tab_switcher').forEach(element => { element.classList.remove('tab_active');});
-        document.getElementById(tab + '_tab').classList.add('tab_active');
-
-        if (!effectsDisabled) {
-            let elements = document.getElementById(tab).querySelectorAll('*');
-            let delay = 0;
-            Array.from(elements).forEach(element => {
-                element.classList.add('fade-in');
-                setTimeout(function() {
-                    element.classList.add('visible');
-                    element.classList.add('fade-in-anim');
-                }, delay);
-                delay += 27;
-            });
-        }
-    } catch {
-        location.hash = default_hash;
-    }
-}
-
-// Picture-Collection
-function changeColl(coll) {
-    document.querySelectorAll('.pic_coll').forEach(element => { element.style.display = 'none';});
-    document.getElementById(coll).style.display = 'block';
-    document.querySelectorAll('.pic_coll_tabs').forEach(element => { element.classList.remove('tab_active');});
-    this.event.target.classList.add('tab_active');
-}
-
-// Load effects if not disabled
-let link = document.createElement('link');
-link.rel = 'stylesheet';
-link.type = 'text/css';
-link.href = 'effects.css';
-
-let nfbText = document.getElementById('changeEffects');
-
-// Turn off major effects on default for mobile devices
-if (window.matchMedia("(max-width: 767px)").matches && !('effectsDisabled' in localStorage)) { effectsDisabled = true;}
-if (!effectsDisabled) { document.head.appendChild(link); nfbText.innerHTML = 'Click <a onclick="changeEffects()">HERE</a> to turn effects off.';}
-
-function changeEffects() {
-    localStorage.setItem('effectsDisabled', !effectsDisabled);
-    location.reload();
-}
+    setTimeout(() => {
+        button1.style.transition = "opacity 1.5s ease";
+        button2.style.transition = "opacity 1.5s ease";
+        button1.style.opacity = "1";
+        button2.style.opacity = "1";
+    }, 2500);
+});
