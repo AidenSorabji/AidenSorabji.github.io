@@ -113,7 +113,6 @@ body, html {
 
 .button-container {
     display: flex; /* Use flexbox for layout */
-    margin-left: 0; /* No left margin to touch the left edge */
 }
 
 .nav-button {
@@ -133,12 +132,14 @@ body, html {
 }
 
 .dark {
+    margin-left: auto;
     background-color: #e0e0e0; /* Darker background for "Aiden Sorabji" */
     font-weight: bold; /* Make text bold */
     pointer-events: none; /* Non-clickable */
 }
 
 .light {
+    margin-left: auto;
     background-color: #ffffff; /* Slightly darker than white for the home button */
     transition: background-color 0.3s, box-shadow 0.3s; /* Transition effects */
 }
@@ -160,9 +161,9 @@ body, html {
 }
 
 .about-button {
+    margin-left: auto;
     background-color: #ffffff; /* Slightly darker than white for the home button */
     transition: background-color 0.3s, box-shadow 0.3s; /* Transition effects */
-    margin-right: auto; /* Push this button to the far right */
 }
 
 .about-button:hover {
