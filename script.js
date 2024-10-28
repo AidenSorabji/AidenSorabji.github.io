@@ -1,11 +1,15 @@
 window.addEventListener('load', () => {
     const container = document.querySelector('.container');
-    const emoji = document.getElementById('emoji');
     const title = document.getElementById('title');
     const paragraph = document.getElementById('paragraph');
     const button1 = document.getElementById('button1');
     const button2 = document.getElementById('button2');
-    const navbar = document.getElementById('navbar');
+    const navbar = document.querySelector('.navbar');
+    const navButtons = document.querySelectorAll('.nav-button'); // Select all nav buttons
+
+    // Initially hide the navbar and set its opacity to 0
+    navbar.style.display = "none"; // Hide navbar initially
+    navbar.style.opacity = "0"; // Ensure navbar is transparent
 
     // Function to fade out the container
     const fadeOutContainer = () => {
@@ -42,9 +46,18 @@ window.addEventListener('load', () => {
     const handleClick = () => {
         fadeOutContainer();
         setTimeout(() => {
-            navbar.style.display = "block"; // Show navbar
-            navbar.style.opacity = "1"; // Make it visible
+            container.style.display = "none"; // Hide container after fading out
+            navbar.style.display = "flex"; // Show navbar using flex to align buttons
             navbar.style.transition = "opacity 1s ease";
+            navbar.style.opacity = "1"; // Make navbar visible
+
+            // Fade in each navbar button with a delay
+            navButtons.forEach((button, index) => {
+                button.style.transition = "opacity 1s ease";
+                setTimeout(() => {
+                    button.style.opacity = "1"; // Make buttons visible with a delay
+                }, index * 200); // Delay each button's fade-in slightly
+            });
         }, 1000); // Wait for fade out to complete
         document.removeEventListener('click', handleClick); // Remove event listener to avoid multiple triggers
     };
