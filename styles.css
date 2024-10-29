@@ -4,6 +4,42 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url('assets/Fonts/Ubuntu-Light.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu-LightItalic';
+    src: url('assets/Fonts/Ubuntu-LightItalic.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('assets/Fonts/Ubuntu-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url('assets/Fonts/Ubuntu-Bold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Italic';
+    src: url('assets/Fonts/Ubuntu-Italic.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url('assets/Fonts/Ubuntu-Medium.ttf');
+    font-display: swap;
+}
+
 body, html {
     height: 100%;
     display: flex;
@@ -128,18 +164,30 @@ body, html {
 }
 
 .home-button {
+    font-family: 'Ubuntu-Light', sans-serif;
+    color: #000;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
     background-color: #f7f7f7; /* Slightly darker than white for the home button */
 }
 
 .dark {
     margin-left: auto;
+    font-family: 'Ubuntu-Bold', sans-serif;
+    color: #000;
+    font-size: 1.2rem;
+    text-decoration: none;
     background-color: #e0e0e0; /* Darker background for "Aiden Sorabji" */
-    font-weight: bold; /* Make text bold */
     pointer-events: none; /* Non-clickable */
 }
 
 .light {
     margin-left: auto;
+    font-family: 'Ubuntu-Light', sans-serif;
+    color: #000;
+    font-size: 1.2rem;
+    text-decoration: none;
     background-color: #ffffff; /* Slightly darker than white for the home button */
     transition: background-color 0.3s, box-shadow 0.3s; /* Transition effects */
 }
@@ -161,7 +209,13 @@ body, html {
 }
 
 .about-button {
+    margin-top: -2px; /* Adjust this value to move it up or down */
     margin-left: auto;
+    font-family: 'Ubuntu-Light', sans-serif;
+    color: #000;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: lighter;
     background-color: #ffffff; /* Slightly darker than white for the home button */
     transition: background-color 0.3s, box-shadow 0.3s; /* Transition effects */
 }
@@ -169,4 +223,17 @@ body, html {
 .about-button:hover {
     background-color: #e0e0e0; /* Darker on hover */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Drop shadow on hover */
+}
+
+section {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease, height 1s ease;
+}
+
+section.visible {
+    opacity: 1;
+    height: auto; /* Allows the section to expand to its natural height */
+    overflow: visible;
 }

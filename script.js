@@ -70,3 +70,45 @@ window.addEventListener('load', () => {
     // Event listener for clicks on the page
     document.addEventListener('click', handleClick);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navButtons = document.querySelectorAll('.nav-button.section');
+    const sections = document.querySelectorAll('section');
+    let activeSection = null;
+
+    // Hide all sections initially
+    sections.forEach(section => {
+        section.classList.remove('visible');
+    });
+
+    // Function to show a section with a fade-in effect
+    function showSection(targetSection) {
+        // Hide the currently active section
+        if (activeSection && activeSection !== targetSection) {
+            fadeOutSection(activeSection);
+        }
+
+        // Fade in the new section
+        targetSection.classList.add('visible');
+        activeSection = targetSection;
+    }
+
+    // Function to hide a section with a fade-out effect
+    function fadeOutSection(section) {
+        section.classList.remove('visible');
+    }
+
+    // Attach event listeners to each navbar button
+    navButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetId = button.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            // Only trigger fade-in if the clicked section is not currently active
+            if (targetSection && targetSection !== activeSection) {
+                showSection(targetSection);
+            }
+        });
+    });
+});
