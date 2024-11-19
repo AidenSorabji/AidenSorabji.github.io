@@ -1,3 +1,4 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FONTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @font-face {
     font-family: 'Ubuntu-Light';
     src: url('assets/Fonts/Ubuntu-Light.ttf');
@@ -34,45 +35,45 @@
     font-display: swap;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .button-container {
     display: flex; /* Use flexbox for layout */
 }
 
 .navbar {
     width: 100%;
-    height: 60px; /* Set a fixed height for the navbar */
-    display: flex; /* Use flexbox for layout */
-    justify-content: flex-start; /* Align items to the left */
-    align-items: center; /* Center items vertically */
-    position: absolute; /* Fix position at the top */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    background-color: transparent; /* Make navbar transparent to show background bar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
-    z-index: 10; /* Ensure it's above other content */
-}
+    height: 60px; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-color: transparent; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 10; 
 
 .background-bar {
     width: 100%;
-    height: 60px; /* Same height as buttons */
-    background-color: #f0f0f0; /* Background color for the bar */
-    position: absolute; /* Fix position */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
-    z-index: 5; /* Behind navbar buttons */
+    height: 60px; 
+    background-color: #f0f0f0; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 5; 
 }
 
 .nav-button {
-    margin-top: -2px; /* Adjust this value to move it up or down */
-    font-size: 1.1rem; /* Font size for navbar items */
-    padding: 19.5px 20px; /* Padding for the button */
-    margin: 0; /* Remove margin to ensure buttons touch each other */
+    margin-top: -2px;
+    font-size: 1.1rem;
+    padding: 19.5px 20px;
+    margin: 0; 
     border: none;
-    border-radius: 0; /* Remove rounded corners for full edge coverage */
-    background-color: #dcdcdc; /* Slightly darker than white for the home button */
-    cursor: pointer; /* Change cursor to pointer */
-    transition: background-color 0.3s; /* Smooth transition for hover */
+    border-radius: 0; 
+    background-color: #dcdcdc;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
 
 .dark {
@@ -81,8 +82,8 @@
     color: #000;
     font-size: 1.2rem;
     text-decoration: none;
-    background-color: #e0e0e0; /* Darker background for "Aiden Sorabji" */
-    pointer-events: none; /* Non-clickable */
+    background-color: #e0e0e0; 
+    pointer-events: none; 
 }
 
 .home-button {
@@ -90,12 +91,12 @@
     color: #000;
     font-size: 1.2rem;
     text-decoration: none;
-    background-color: #f7f7f7; /* Slightly darker than white for the home button */
+    background-color: #f7f7f7; 
 }
 
 .home-button:hover {
-    background-color: #e5e4e4; /* Darker on hover */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Drop shadow on hover */
+    background-color: #e5e4e4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .light {
@@ -105,29 +106,28 @@
     color: #000;
     font-size: 1.2rem;
     text-decoration: none;
-    background-color: #ffffff; /* Slightly darker than white for the home button */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Transition effects */
+    background-color: #ffffff; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
 }
 
 .light:hover {
-    background-color: rgb(236, 236, 236); /* Darker on hover */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Drop shadow on hover */
+    background-color: rgb(236, 236, 236); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-
 .about-button {
-    margin-top: -2px; /* Adjust this value to move it up or down */
+    margin-top: -2px; 
     margin-left: auto;
     font-family: 'Ubuntu-Light', sans-serif;
     color: #000;
     font-size: 1.2rem;
     text-decoration: none;
     font-weight: lighter;
-    background-color: #ffffff; /* Slightly darker than white for the home button */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Transition effects */
+    background-color: #ffffff; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
 }
 
 .about-button:hover {
-    background-color: #e0e0e0; /* Darker on hover */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Drop shadow on hover */
+    background-color: #e0e0e0; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
