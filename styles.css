@@ -37,7 +37,7 @@
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .button-container {
-    display: flex; /* Use flexbox for layout */
+    display: flex; 
 }
 
 .navbar {
@@ -130,4 +130,63 @@
 .about-button:hover {
     background-color: #e0e0e0; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVBAR Sections ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+section {
+    height: auto;
+    overflow: visible;
+}
+
+.banner-wrap {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.grid_row, .grid {
+    padding-top: .15em;
+    display: flex;
+    gap: 1em;
+}
+
+.grid {
+    flex-direction: column;
+}
+
+.grid_row_box_welcome {
+    padding: .5em;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.grid_row_box {
+    padding: .5em;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2); 
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Format of Text ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.title {
+    font-family: 'Ubuntu-Bold', sans-serif;
+    font-size: 7.0rem;
+}
+
+.subheading {
+    font-family: 'Ubuntu-Medium', sans-serif;
+    font-weight: bold;
+    font-size: 2.3rem;
+    padding-bottom: 0%;
+    line-height: 0%;
+    padding-left: 0.4em;
+}
+
+.body {
+    font-family: 'Ubuntu-Light', sans-serif;
+    font-size: 1.3rem;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
 }
