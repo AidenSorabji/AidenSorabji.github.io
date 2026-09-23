@@ -1142,4 +1142,9 @@ body.crt-degauss:after { animation:degauss .47s ease-out both; }
   .masthead { min-height:126px; padding-top:18px; }
   .audio-control { top:auto; right:auto; bottom:11px; left:16px; max-width:calc(100% - 32px); }
   .audio-title { min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  /* Mobile uses a lighter transition: no CRT scale transform to squash content. */
+  body.page-leaving main {animation: mobilePageExit .18s ease-in both;}
+  main.page-entering {animation: mobilePageEnter .24s ease-out both;}
 }
+@keyframes mobilePageExit { from { opacity:1; transform:translateY(0); filter:none; } to { opacity:0; transform:translateY(10px); filter:brightness(1.15); } }
+@keyframes mobilePageEnter { from { opacity:0; transform:translateY(10px); filter:brightness(1.2); } to { opacity:1; transform:translateY(0); filter:none; } }
