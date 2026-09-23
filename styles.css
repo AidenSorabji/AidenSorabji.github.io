@@ -1142,4 +1142,71 @@ body.crt-degauss:after { animation:degauss .47s ease-out both; }
   .masthead { min-height:126px; padding-top:18px; }
   .audio-control { top:auto; right:auto; bottom:11px; left:16px; max-width:calc(100% - 32px); }
   .audio-title { min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  /* Mobile uses a lighter transition: no CRT scale transform to squash content. */
+  body.page-leaving main {animation: mobilePageExit .18s ease-in both;}
+  main.page-entering {animation: mobilePageEnter .24s ease-out both;}
+}
+@keyframes mobilePageExit { from { opacity:1; transform:translateY(0); filter:none; } to { opacity:0; transform:translateY(10px); filter:brightness(1.15); } }
+@keyframes mobilePageEnter { from { opacity:0; transform:translateY(10px); filter:brightness(1.2); } to { opacity:1; transform:translateY(0); filter:none; } }
+/* Incandescent hover: a quick over-bright bloom, then the normal active glow. */
+@keyframes incandescentIgnite {
+    0% {
+        filter: brightness(1);
+        box-shadow: inset 1px 1px rgba(255, 255, 255, .25), 0 0 0 rgba(184, 232, 255, 0);
+    }
+
+    32% {
+        filter: brightness(1.52) saturate(1.18);
+        box-shadow: inset 0 0 13px rgba(237, 251, 255, .85), 0 0 23px rgba(172, 226, 255, .86), 0 0 43px rgba(122, 193, 239, .45);
+    }
+
+    100% {
+        filter: brightness(1.08);
+        box-shadow: inset 1px 1px rgba(255, 255, 255, .55), 0 0 13px rgba(153, 220, 255, .3);
+    }
+}
+
+.nav-link:hover,
+.project-card:hover,
+.contact-card:hover,
+.action:hover,
+.play:hover,
+.static-toggle:hover {
+    animation: incandescentIgnite .36s cubic-bezier(.18, .7, .32, 1) both, hoverBreathe 2.8s ease-in-out 3s infinite;}
+
+.static-toggle:hover .switch-track {
+    border-color: #e1f8ff;
+    box-shadow: inset 1px 1px rgba(255, 255, 255, .45), 0 0 12px rgba(172, 226, 255, .55);
+}
+
+@keyframes hoverBreathe {
+
+    0%,
+    100% {
+        filter: brightness(1.08);
+        box-shadow: inset 1px 1px rgba(255, 255, 255, .5), 0 0 12px rgba(153, 220, 255, .32);
+    }
+
+    50% {
+        filter: brightness(1.24) saturate(1.12);
+        box-shadow: inset 0 0 10px rgba(226, 248, 255, .65), 0 0 20px rgba(161, 220, 255, .62), 0 0 35px rgba(114, 191, 239, .26);
+    }
+}
+
+@media (dynamic-range: high) {
+
+    .nav-link:hover,
+    .project-card:hover,
+    .contact-card:hover,
+    .action:hover,
+    .play:hover,
+    .static-toggle:hover {
+        filter: brightness(1.28) saturate(1.2);
+    }
+
+    .nav-link:hover,
+    .project-card:hover,
+    .contact-card:hover {
+        box-shadow: inset 0 0 15px color(display-p3 0.82 0.95 1 / .7), 0 0 28px color(display-p3 0.5 0.83 1 / .72), 0 0 54px color(display-p3 0.35 0.7 1 / .32);
+    }
 }
