@@ -3,6 +3,9 @@
 
 A y2k-themed website built with HTML, CSS, and JavaScript. It incorporates HDR objects, transitions created within JS, and custom sound effects.
 
+> [!Important]
+> Yes, took inspiration from [2ADVANCED STUDIOS](https://2advanced.com/) and their own website. I am currently adding features + new themes to differenciate it from their website. Simply, I just love the look of their website and felt like developing something similar would be pretty cool.
+
 ## Table of Contents
 - [aidensorabji.github.io](#aidensorabjigithubio)
   - [Table of Contents](#table-of-contents)
@@ -31,6 +34,12 @@ When making this website, I wanted to basically "Wow" the user with it's feature
 - [x] Integrated SoundCloud Embed
 
 ## Further Feature Ideas
+
+> [!Note]
+> These won't be done right away. I am a full-time university student with a job and other gigs, so updating this website right now is the least of my priorities. However, WHEN I have the time (and I am not working on other projects), I will do my best to update this website with new features. 
+> <br><br>
+> **I will be updating the website to update information about me, as well as to fix it if god knows something happens.**
+
 I'm pretty ambitious, so I have quite a bit of future ideas for this website. Some will not be listed here as they will be future easter eggs ;).
 
 ### Simple Features
@@ -45,6 +54,9 @@ I'm pretty ambitious, so I have quite a bit of future ideas for this website. So
 ### Far-Off Features
 - [ ] Theme Switcher 
   - [ ] Entirely New Themes
+    - [ ] ENCOM OS12
+    - [ ] Douglas Arthur (2002)
+    - [ ] Shiimera (2003)
 - [ ] Web Projects Within Website
 
 ## Contributions
