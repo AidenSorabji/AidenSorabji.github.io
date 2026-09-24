@@ -1,47 +1,68 @@
 <!doctype html>
 <html lang="en">
 
+<!-- Head Of Page-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <!-- Title + Favicons-->
     <title>→ AIDEN.V1 / PORTFOLIO</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="/icons/favicon-ico.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon-apple.png">
 </head>
 
+<!-- Body Of Page-->
 <body>
     <main class="shell">
+        <!-- Top Stripe -->
         <div class="top-stripe"></div>
+
+        <!-- Header-->
         <header class="masthead chrome">
+            <!-- Left Side Branding-->
             <a class="brand" href="index.html">
-                <span class="brand-mark">A</span>
-                <span>Aiden's archive<small>creative systems / digital dispatches</small></span>
+                <span class="brand-mark">A</span> <!-- Icon-->
+                <span>Aiden's archive<small>creative systems / digital dispatches</small></span> <!-- Title/Description-->
             </a>
+            
+            <!-- Right Side Audio Controls-->
             <div class="audio-control">
-                <button class="play" aria-label="Play playlist">▶</button>
-                <div class="audio-title">lo-fi house relay<span>Aiden · soundcloud</span></div>
+                <button class="play" aria-label="Play playlist">▶</button> <!-- Play/Pause Button-->
+                <div class="audio-title">lo-fi house relay<span>Aiden · soundcloud</span></div> <!-- Description-->
             </div>
         </header>
+
+        <!-- Nav Bar -->
         <nav class="nav">
-            <span class="nav-link nav-prefix">→ AIDEN.V1 / PORTFOLIO</span>
-            <a class="nav-link active"
-                href="index.html">home</a>
-                <a class="nav-link" href="projects.html">projects</a>
-                <a class="nav-link" href="skills.html">skills</a>
-                <a class="nav-link" href="about.html">about</a>
-                <a class="nav-link" href="contact.html">contact</a>
-            </nav>
+            <span class="nav-link nav-prefix">→ AIDEN.V1 / PORTFOLIO</span> <!-- Left Description Button -->
+            <a class="nav-link active" href="index.html">home</a>           <!-- Home Button -->
+            <a class="nav-link" href="projects.html">projects</a>           <!-- Projects Button -->
+            <a class="nav-link" href="skills.html">skills</a>               <!-- Skills Button -->
+            <a class="nav-link" href="about.html">about</a>                 <!-- About Button -->
+            <a class="nav-link" href="contact.html">contact</a>             <!-- Contact Button -->
+        </nav>
+
+        <!-- Hero -->
         <section class="hero">
+            <!-- Image -->
             <img class="hero-media" src="assets/header-image.jpeg" alt="Futuristic architectural composition">
+
+            <!-- Text On Image -->
             <div class="hero-copy">
                 <div class="eyebrow">// NEW.ME / 2026</div>
                 <h1>Systems with a pulse</h1>
                 <p>Computer science, experimental interfaces, and small worlds made to explore.</p>
             </div>
+
+            <!-- Text Under Image -->
             <div class="scrollbar">↓ scroll.extended.content <span style="float:right">signal: stable</span></div>
         </section>
+
+        <!-- Content Grid // UPPER -->
         <section class="content-grid">
+            <!-- Feature Panel -->
             <article class="panel">
                 <div class="section-label"><b>▣</b> feature</div>
                 <div class="panel-inner">
@@ -51,6 +72,8 @@
                     <a class="link-row" href="projects.html">view project index →</a>
                 </div>
             </article>
+
+            <!-- Signal Log Panel -->
             <article class="panel">
                 <div class="section-label"><b>◫</b> signal.log</div>
                 <div class="panel-inner">
@@ -60,6 +83,8 @@
                     <div class="data-row"><strong>03 /</strong> learning in public, one commit at a time</div>
                 </div>
             </article>
+
+            <!-- Updates Panel -->
             <article class="panel">
                 <div class="section-label"><b>▥</b> updates</div>
                 <div class="panel-inner">
@@ -70,7 +95,10 @@
                 </div>
             </article>
         </section>
+
+        <!-- Content Grid // LOWER -->
         <section class="lower-grid">
+            <!-- Mailing Link Panel -->
             <article class="panel">
                 <div class="section-label">mailing link</div>
                 <div class="panel-inner">
@@ -81,6 +109,8 @@
                     </div>
                 </div>
             </article>
+
+            <!-- About Link Panel -->
             <article class="panel">
                 <div class="section-label">now processing</div>
                 <div class="panel-inner">
@@ -89,6 +119,8 @@
                     <a class="link-row" href="about.html">inspect creators cache →</a>
                 </div>
             </article>
+
+            <!-- Transmissions Panel -->
             <article class="panel">
                 <div class="section-label">transmissions</div>
                 <div class="panel-inner">
@@ -98,15 +130,20 @@
                 </div>
             </article>
         </section>
+
+        <!-- Footer -->
         <footer class="footer">
             <span>© 2026 AIDEN / ALL SIGNALS RESERVED</span>
-            <button class="static-toggle">disable light static</button>
+            <button class="static-toggle">disable light static</button> <!-- Disable Static Button -->
             <span>hosting partner: the internet</span>
         </footer>
     </main>
+
+    <!-- SoundCloud Player Frames -->
     <iframe id="soundcloud-player" title="Lo-fi house playlist" width="1" height="1" style="position:absolute;opacity:0;pointer-events:none" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/aidensorabji/sets/lo-fi-house&auto_play=false"></iframe>
     <script src="https://w.soundcloud.com/player/api.js"></script>
+
+    <!-- Link to JS File -->
     <script src="script.js"></script>
 </body>
-
 </html>

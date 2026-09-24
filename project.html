@@ -1,36 +1,61 @@
 <!doctype html>
 <html lang="en">
 
+<!-- Head Of Page-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <!-- Title + Favicons-->
     <title>→ AIDEN.V1 / CASE FILE</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/icons/favicon-ico.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon-apple.png">
 </head>
 
+<!-- Body Of Page-->
 <body>
     <main class="shell">
+        <!-- Top Stripe -->
         <div class="top-stripe"></div>
-        <header class="masthead chrome"><a class="brand" href="index.html"><span
+
+        <!-- Header-->
+        <header class="masthead chrome">
+            <!-- Left Side Branding-->
+            <a class="brand" href="index.html"><span
                     class="brand-mark">A</span><span>Aiden's archive<small>creative systems / digital
                         dispatches</small></span></a>
+            <!-- Right Side Audio Controls-->
             <div class="audio-control"><button class="play" aria-label="Play playlist">▶</button>
                 <div class="audio-title">lo-fi house relay<span>Aiden · soundcloud</span></div>
             </div>
         </header>
-        <nav class="nav"><span class="nav-link nav-prefix">→ AIDEN.V1 / CASE FILE</span><a class="nav-link"
-                href="index.html">home</a><a class="nav-link active" href="projects.html">projects</a><a
-                class="nav-link" href="skills.html">skills</a><a class="nav-link" href="about.html">about</a><a
-                class="nav-link" href="contact.html">contact</a></nav>
+
+        <!-- Nav Bar -->
+        <nav class="nav"><span class="nav-link nav-prefix">→ AIDEN.V1 / CASE FILE</span> <!-- Left Description Button -->
+            <a class="nav-link" href="index.html">home</a> <!-- Home Button -->
+            <a class="nav-link active" href="projects.html">projects</a> <!-- Projects Button -->
+            <a class="nav-link" href="skills.html">skills</a> <!-- Skills Button -->
+            <a class="nav-link" href="about.html">about</a> <!-- About Button -->
+            <a class="nav-link" href="contact.html">contact</a> <!-- Contact Button -->
+        </nav>
+
+        <!-- Hero -->
         <section class="hero"><img class="hero-media" src="assets/header-image.jpeg" alt="Project header">
+            <!-- Text On Image -->
             <div class="hero-copy">
                 <div class="eyebrow">// CASE FILE / 01</div>
                 <h1>Project title</h1>
                 <p>Replace this title and short project summary with your own project story.</p>
             </div>
+
+            <!-- Text Under Image -->
             <div class="scrollbar">← return to project index</div>
         </section>
+
+        <!-- Project Details -->
         <section class="about-layout">
+            <!-- Mission Summary Panel -->
             <article class="panel about-copy">
                 <div class="section-label">mission summary</div>
                 <div class="panel-inner">
@@ -38,10 +63,12 @@
                     <p>This is the reusable project page. Add the challenge, your approach, the technology you used, and
                         what you learned here. Duplicate this page for every project, then update the project-card links
                         in the project index.</p>
-                    <div class="signal">A good case file is a short, clear story: problem → process → result.</div><a
-                        class="action" href="projects.html">return to modules</a>
+                    <div class="signal">A good case file is a short, clear story: problem → process → result.</div>
+                    <a class="action" href="projects.html">return to modules</a>
                 </div>
             </article>
+
+            <!-- System Readout Panel -->
             <aside class="panel">
                 <div class="section-label">system readout</div>
                 <div class="panel-inner">
@@ -52,13 +79,20 @@
                 </div>
             </aside>
         </section>
-        <footer class="footer"><span>© 2026 AIDEN / CASE FILE</span><button class="static-toggle">disable light
-                static</button><span>signal archived</span></footer>
-    </main><iframe id="soundcloud-player" title="Lo-fi house playlist" width="1" height="1"
-        style="position:absolute;opacity:0"
-        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/aidensorabji/sets/lo-fi-house&auto_play=false"></iframe>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <span>© 2026 AIDEN / CASE FILE</span>
+            <button class="static-toggle">disable light static</button>
+            <span>signal archived</span>
+        </footer>
+    </main>
+
+    <!-- SoundCloud Player Frames -->
+    <iframe id="soundcloud-player" title="Lo-fi house playlist" width="1" height="1" style="position:absolute;opacity:0" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/aidensorabji/sets/lo-fi-house&auto_play=false"></iframe>
     <script src="https://w.soundcloud.com/player/api.js"></script>
+    
+    <!-- Link to JS File -->
     <script src="script.js"></script>
 </body>
-
 </html>
