@@ -1,5 +1,5 @@
 # aidensorabji.github.io
-![alt text]("/assets/homepage-preview.png")
+![alt text](/assets/homepage-preview.png)
 
 A y2k-themed website built with HTML, CSS, and JavaScript. It incorporates HDR objects, transitions created within JS, and custom sound effects.
 
