@@ -1,36 +1,65 @@
 <!doctype html>
 <html lang="en">
 
+<!-- Head Of Page-->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Title + Favicons-->
   <title>→ AIDEN.V1 / SKILL MATRIX</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="/icons/favicon-ico.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon-apple.png">
 </head>
 
+<!-- Body Of Page-->
 <body>
   <main class="shell">
+    <!-- Top Stripe -->
     <div class="top-stripe"></div>
-    <header class="masthead chrome"><a class="brand" href="index.html"><span class="brand-mark">A</span><span>Aiden's
-          archive<small>creative systems / digital dispatches</small></span></a>
-      <div class="audio-control"><button class="play" aria-label="Play or pause playlist">▶</button>
+
+    <!-- Header-->
+    <header class="masthead chrome">
+      <!-- Left Side Branding-->
+      <a class="brand" href="index.html">
+        <span class="brand-mark">A</span>
+        <span>Aiden's archive<small>creative systems / digital dispatches</small></span>
+      </a>
+
+      <!-- Right Side Audio Controls-->
+      <div class="audio-control">
+        <button class="play" aria-label="Play or pause playlist">▶</button>
         <div class="audio-title">lo-fi house relay<span>Aiden · soundcloud</span></div>
       </div>
     </header>
-    <nav class="nav"><span class="nav-link nav-prefix">→ AIDEN.V1 / SKILL MATRIX</span><a class="nav-link"
-        href="index.html">home</a><a class="nav-link" href="projects.html">projects</a><a class="nav-link active"
-        href="skills.html">skills</a><a class="nav-link" href="about.html">about</a><a class="nav-link"
-        href="contact.html">contact</a></nav>
+
+    <!-- Nav Bar -->
+    <nav class="nav"><span class="nav-link nav-prefix">→ AIDEN.V1 / SKILL MATRIX</span> <!-- Left Description Button -->
+      <a class="nav-link" href="index.html">home</a> <!-- Home Button -->
+      <a class="nav-link" href="projects.html">projects</a> <!-- Projects Button -->
+      <a class="nav-link active" href="skills.html">skills</a> <!-- Skills Button -->
+      <a class="nav-link" href="about.html">about</a> <!-- About Button -->
+      <a class="nav-link" href="contact.html">contact</a> <!-- Contact Button -->
+    </nav>
+
+    <!-- Hero -->
     <section class="hero"><img class="hero-media" src="assets/header-image.jpeg"
         alt="Futuristic architectural composition">
+      <!-- Text On Image -->
       <div class="hero-copy">
         <div class="eyebrow">// SYSTEM CHECK</div>
         <h1>Skill matrix</h1>
         <p>A living list of languages, tools, and workflows in the current build kit.</p>
       </div>
+
+      <!-- Text Under Image -->
       <div class="scrollbar">↓ skill.readout / status: growing</div>
     </section>
+
+    <!-- Skills Content -->
     <section class="skill-columns">
+      <!-- Language Inventory Panel -->
       <article class="panel">
         <div class="section-label"><b>▤</b> language inventory</div>
         <div class="panel-inner">
@@ -49,6 +78,7 @@
           </ul>
         </div>
       </article>
+      <!-- Code Editors Panel -->
       <aside class="panel">
         <div class="section-label"><b>◫</b> code editors</div>
         <div class="panel-inner">
@@ -71,13 +101,20 @@
         </div>
       </aside>
     </section>
-    <footer class="footer"><span>© 2026 AIDEN / SKILL MATRIX</span><button class="static-toggle">disable moving
-        static</button><span>all systems nominal</span></footer>
-  </main><iframe id="soundcloud-player" title="Lo-fi house playlist" width="1" height="1"
-    style="position:absolute;opacity:0"
-    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/aidensorabji/sets/lo-fi-house&auto_play=false"></iframe>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>© 2026 AIDEN / SKILL MATRIX</span>
+      <button class="static-toggle">disable moving static</button>
+      <span>all systems nominal</span>
+    </footer>
+  </main>
+
+  <!-- SoundCloud Player Frames -->
+  <iframe id="soundcloud-player" title="Lo-fi house playlist" width="1" height="1" style="position:absolute;opacity:0" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/aidensorabji/sets/lo-fi-house&auto_play=false"></iframe>
   <script src="https://w.soundcloud.com/player/api.js"></script>
+  
+  <!-- Link to JS File -->
   <script src="script.js"></script>
 </body>
-
 </html>

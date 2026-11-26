@@ -1,33 +1,59 @@
 <!doctype html>
 <html lang="en">
 
+<!-- Head Of Page-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <!-- Title + Favicons-->
     <title>→ AIDEN.V1 / PROJECT INDEX</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/icons/favicon-ico.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon-apple.png">
 </head>
 
+<!-- Body Of Page-->
 <body>
     <main class="shell">
+        <!-- Top Stripe -->
         <div class="top-stripe"></div>
-        <header class="masthead chrome"><a class="brand" href="index.html"><span
-                    class="brand-mark">A</span><span>Aiden's archive<small>creative systems / digital
-                        dispatches</small></span></a>
-            <div class="audio-control"><button class="play" aria-label="Play playlist">▶</button>
+        
+        <!-- Header-->
+        <header class="masthead chrome">
+            <!-- Left Side Branding-->
+            <a class="brand" href="index.html">
+                <span class="brand-mark">A</span>
+                <span>Aiden's archive<small>creative systems / digital dispatches</small></span>
+            </a>
+
+            <!-- Right Side Audio Controls-->
+            <div class="audio-control">
+                <button class="play" aria-label="Play playlist">▶</button>
                 <div class="audio-title">lo-fi house relay<span>Aiden · soundcloud</span></div>
             </div>
         </header>
-        <nav class="nav"><span class="nav-link nav-prefix">→ AIDEN.V1 / PROJECT INDEX</span><a class="nav-link"
-                href="index.html">home</a><a class="nav-link active" href="projects.html">projects</a><a
-                class="nav-link" href="skills.html">skills</a><a class="nav-link" href="about.html">about</a><a
-                class="nav-link" href="contact.html">contact</a></nav>
+
+        <!-- Nav Bar -->
+        <nav class="nav">
+            <span class="nav-link nav-prefix">→ AIDEN.V1 / PROJECT INDEX</span> <!-- Left Description Button -->
+            <a class="nav-link active" href="index.html">home</a>               <!-- Home Button -->
+            <a class="nav-link" href="projects.html">projects</a>               <!-- Projects Button -->
+            <a class="nav-link" href="skills.html">skills</a>                   <!-- Skills Button -->
+            <a class="nav-link" href="about.html">about</a>                     <!-- About Button -->
+            <a class="nav-link" href="contact.html">contact</a>                 <!-- Contact Button -->
+        </nav>
+
+        <!-- Page Intro -->
         <section class="page-intro">
             <h1>Project modules / 06</h1>
             <p>A selection of build logs, interface experiments, and systems currently orbiting the archive. Select a
                 module to enter its case file.</p>
         </section>
+
+        <!-- Projects Modules -->
         <section class="projects">
+            <!-- Module 1 -->
             <a class="project-card" href="project.html?case=asl-keyboard">
                 <div class="project-thumb"></div>
                 <div class="project-copy">
@@ -36,6 +62,8 @@
                     <span>open case file →</span>
                 </div>
             </a>
+
+            <!-- Module 2 -->
             <a class="project-card" href="project.html?case=macgpt">
                 <div class="project-thumb"></div>
                 <div class="project-copy">
@@ -44,6 +72,8 @@
                     <span>open case file →</span>
                 </div>
             </a>
+
+            <!-- Module 3 -->
             <a class="project-card" href="project.html?case=face-detection">
                 <div class="project-thumb"></div>
                 <div class="project-copy">
@@ -52,6 +82,8 @@
                     <span>open case file →</span>
                 </div>
             </a>
+
+            <!-- Module 4 -->
             <a class="project-card" href="project.html?case=portfolio">
                 <div class="project-thumb"></div>
                 <div class="project-copy">
@@ -60,6 +92,8 @@
                     <span>open case file →</span>
                 </div>
             </a>
+
+            <!-- Module 5 -->
             <a class="project-card" href="project.html?case=future-one">
                 <div class="project-thumb"></div>
                 <div class="project-copy">
@@ -68,6 +102,8 @@
                     <!-- <span>open case file →</span> -->
                 </div>
             </a>
+
+            <!-- Module 6 -->
             <a class="project-card" href="project.html?case=future-two">
                 <div class="project-thumb"></div>
                 <div class="project-copy">
@@ -77,13 +113,20 @@
                 </div>
             </a>
         </section>
-        <footer class="footer"><span>© 2026 AIDEN / PROJECT FREQUENCY</span><button class="static-toggle">disable light
-                static</button><span>06 modules online</span></footer>
-    </main><iframe id="soundcloud-player" title="Lo-fi house playlist" width="1" height="1"
-        style="position:absolute;opacity:0"
-        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/aidensorabji/sets/lo-fi-house&auto_play=false"></iframe>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <span>© 2026 AIDEN / PROJECT FREQUENCY</span>
+            <button class="static-toggle">disable light static</button> <!-- Disable Static Button -->
+            <span>06 modules online</span>
+        </footer>
+    </main>
+
+    <!-- SoundCloud Player Frames -->
+    <iframe id="soundcloud-player" title="Lo-fi house playlist" width="1" height="1" style="position:absolute;opacity:0" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/aidensorabji/sets/lo-fi-house&auto_play=false"></iframe>
     <script src="https://w.soundcloud.com/player/api.js"></script>
+    
+    <!-- Link to JS File -->
     <script src="script.js"></script>
 </body>
-
 </html>
