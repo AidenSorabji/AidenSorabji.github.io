@@ -1,13 +1,13 @@
-# aidensorabji.github.io
+# aidensorabji.github.io (2026 Update)
 ![alt text](/assets/homepage-preview.png)
 
-A y2k-themed website built with HTML, CSS, and JavaScript. It incorporates HDR objects, transitions created within JS, and custom sound effects.
+This is the 2026 redesign of my website. It is a y2k-themed, built with HTML, CSS, and JavaScript. It incorporates HDR objects, transitions created within JS, and custom sound effects.
 
 > [!Important]
 > Yes, took inspiration from [2ADVANCED STUDIOS](https://2advanced.com/) and their own website. I am currently adding features + new themes to differenciate it from their website. Simply, I just love the look of their website and felt like developing something similar would be pretty cool.
 
 ## Table of Contents
-- [aidensorabji.github.io](#aidensorabjigithubio)
+- [aidensorabji.github.io (2026 Update)](#aidensorabjigithubio-2026-update)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
     - [Theme](#theme)
