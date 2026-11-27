@@ -1,8 +1,6 @@
 # aidensorabji.github.io (2027 Update)
-This branch covers the progess being made to redesign my website for the 2027 year. This branch will not feature production-level of neatness.
-
 > [!Important]
-> This branch will be pulled into the main branch and deleted when the 2027 redesign is completed. Commits from this branch will eventually be pulled into the main branch as a backup.
+> This branch is a test branch for the 2027 redesign. It will eventually be erradicated through a pull request into 2027redesign-test.
 
 ## Table of Contents
 - [aidensorabji.github.io (2027 Update)](#aidensorabjigithubio-2027-update)
