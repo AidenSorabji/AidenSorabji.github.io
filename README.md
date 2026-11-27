@@ -1,68 +1,73 @@
-# aidensorabji.github.io (2026 Update)
-![alt text](/assets/homepage-preview.png)
-
-This is the 2026 redesign of my website. It is a y2k-themed, built with HTML, CSS, and JavaScript. It incorporates HDR objects, transitions created within JS, and custom sound effects.
+# aidensorabji.github.io (2027 Update)
+This branch covers the progess being made to redesign my website for the 2027 year. This branch will not feature production-level of neatness.
 
 > [!Important]
-> Yes, took inspiration from [2ADVANCED STUDIOS](https://2advanced.com/) and their own website. I am currently adding features + new themes to differenciate it from their website. Simply, I just love the look of their website and felt like developing something similar would be pretty cool.
+> This branch will be pulled into the main branch and deleted when the 2027 redesign is completed. Commits from this branch will eventually be pulled into the main branch as a backup.
 
 ## Table of Contents
-- [aidensorabji.github.io (2026 Update)](#aidensorabjigithubio-2026-update)
+- [aidensorabji.github.io (2027 Update)](#aidensorabjigithubio-2027-update)
   - [Table of Contents](#table-of-contents)
-  - [Features](#features)
-    - [Theme](#theme)
-    - [Effects](#effects)
-  - [Further Feature Ideas](#further-feature-ideas)
-    - [Simple Features](#simple-features)
-    - [Ambitious Features](#ambitious-features)
-    - [Far-Off Features](#far-off-features)
-  - [Contributions](#contributions)
-- [License \& Usage](#license--usage)
+  - [To-do](#to-do)
+    - [Front-End](#front-end)
+    - [Back-End](#back-end)
+  - [Access To 2026 Website](#access-to-2026-website)
+  - [Slated Release](#slated-release)
 
-## Features
-When making this website, I wanted to basically "Wow" the user with it's features. The user in question, would be an un-assuming person who isn't as technologically advanced as me and you.
-### Theme
-- [x] Cohesive Colour Scheme
-- [x] Y2K-esque Fonts
-- [x] Button Highlight Effects
-- [x] Stylized Images
-- [x] Y2K-esque Background Songs
-### Effects
-- [x] HDR-Enabled Button Highlights
-- [x] CRT Scanlines Effect
-- [x] CRT-esque Closing Transition
-- [x] Integrated SoundCloud Embed
+## To-do
+### Front-End
+- [ ] Encom OS-12 esque theme implementation
+- [ ] Sounds Implementation
+  - [ ] Sound effects (New, or taken from [edex-ui](https://github.com/GitSquared/edex-ui/tree/master/src/assets/audio))
+  - [ ] Background songs (New, or from SoundCloud)
+- [ ] Apps and Files/Folders
+  - [ ] Apps
+    - [ ] Terminal
+    - [ ] File Explorer (or cooler name)
+    - [ ] Music Player (cooler name too)
+    - [ ] Settings (Settings of website)
+  - [ ] Files (Go through via window or terminal (use unix-like commands)
+    - [ ] Port of info from 2026 website, split into different files
+    - [ ] Easter Eggs
+- [ ] Ambient Lighting (Config. from settings)
+  - [ ] Glowing text filter
+  - [ ] CRT like filter
+- [ ] Transitions
+  - [ ] Letter-by-letter text output in terminal
+  - [ ] Interesting transitions in other parts of the GUI
+### Back-End
+- [ ] Access to previous redesigns
+  - File System: 
+```
+          .
+          ├── assets
+          │   ├── sound-effects
+          │   │   └── ...
+          │   └── images
+          │       └── ...
+          ├── pages
+          │   └── ...
+          ├── style
+          │   ├── styles.css
+          │   └── script.js
+          └── index.html
+```
+  - The 2026 redesign files are visible right now within ```/root/``` to reuse for the 2027 redesign. They will eventually be removed.
+- [ ] Full HDR Support
+- [ ] Optimization
+  - [ ] Reuse of functions 
+  - [ ] Small file sizes
+  - [ ] more...
 
-## Further Feature Ideas
+## Access To 2026 Website
+Currently, the 2026 redesign of my website is available right now on my website [aidensorabji.github.io](aidensorabji.github.io). However, a backup accessable through Github Pages will be available at these links: <br>
+* [Repository](https://github.com/AidenSorabji/2026)
+* [Website Link](aidensorabji.github.io/2026)
 
 > [!Note]
-> These won't be done right away. I am a full-time university student with a job and other gigs, so updating this website right now is the least of my priorities. However, WHEN I have the time (and I am not working on other projects), I will do my best to update this website with new features. 
-> <br><br>
-> **I will be updating the website to update information about me, as well as to fix it if god knows something happens.**
+> Once the 2027 redesign has been pulled into the main branch, the 2026 redesign will only be accessible through the repository and website link above.
+>
+> Through the releases tab in the main branch, the website revisions will be accessible.
 
-I'm pretty ambitious, so I have quite a bit of future ideas for this website. Some will not be listed here as they will be future easter eggs ;).
-
-### Simple Features
-- [ ] New/Updated Website Overlays
-- [ ] Effects Window To Change Effects, Style, etc.
-
-### Ambitious Features
-- [ ] Fully Featured Terminal
-- [ ] Custom Right-Click Menu (Not Client Dependent)
-- [ ] Splash Screen
-
-### Far-Off Features
-- [ ] Theme Switcher 
-  - [ ] Entirely New Themes
-    - [ ] ENCOM OS12
-    - [ ] Douglas Arthur (2002)
-    - [ ] Shiimera (2003)
-- [ ] Web Projects Within Website
-
-## Contributions
-A big thank you to [2ADVANCED STUDIOS](https://2advanced.com/), as their [website](https://v3.2advanced.com/v3expansionsreboot) was the inspiration for my website.
-
-I would also love to thank everyone who gave their input on this project, as not every idea/feature was my idea, but what was recommended.
-
-# License & Usage
-This repository uses the MIT License. Please cite my name when using any part of this project, including but not limited to theme inspiration (please cite [2ADVANCED STUDIOS](https://2advanced.com/) as well), borrowing of anything code related, usuage of this repository as a template, using one or more of the files and its contents within this repository, and more.
+## Slated Release
+* **Scheduled Release Date:** January 1/2, 2027
+* **2027 Redesign Finalized:** Late December
